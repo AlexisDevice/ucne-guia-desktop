@@ -1,3 +1,5 @@
+using ucne_guia_desktop.Views;
+
 namespace ucne_guia_desktop
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace ucne_guia_desktop
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new Login());
         }
     }
 }
