@@ -14,7 +14,7 @@ namespace ucne_guia_desktop.Controllers
 {
     public class Auth
     {
-        private readonly string apiUrl = "http://192.168.1.83:5000";
+        private readonly string apiUrl = "http://192.168.0.104:5000";
         private static readonly HttpClient client = new HttpClient();
         public async Task<bool> Login(string email, string password)
         {

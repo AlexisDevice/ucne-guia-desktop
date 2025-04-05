@@ -33,5 +33,11 @@ namespace ucne_guia_desktop.Views
         {
             Application.Exit();
         }
+
+        private void Materias_btn_Click(object sender, EventArgs e)
+        {
+            Materias materias = new Materias();
+            materias.Show();
+        }
     }
 }

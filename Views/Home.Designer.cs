@@ -43,9 +43,10 @@
             // ucneLogo_pbx
             // 
             ucneLogo_pbx.Image = (Image)resources.GetObject("ucneLogo_pbx.Image");
-            ucneLogo_pbx.Location = new Point(431, 12);
+            ucneLogo_pbx.Location = new Point(616, 20);
+            ucneLogo_pbx.Margin = new Padding(4, 5, 4, 5);
             ucneLogo_pbx.Name = "ucneLogo_pbx";
-            ucneLogo_pbx.Size = new Size(76, 82);
+            ucneLogo_pbx.Size = new Size(109, 137);
             ucneLogo_pbx.SizeMode = PictureBoxSizeMode.Zoom;
             ucneLogo_pbx.TabIndex = 0;
             ucneLogo_pbx.TabStop = false;
@@ -54,17 +55,19 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(513, 40);
+            label1.Location = new Point(733, 67);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(98, 25);
+            label1.Size = new Size(149, 40);
             label1.TabIndex = 1;
             label1.Text = "UcneGuia";
             // 
             // Comentarios_btn
             // 
-            Comentarios_btn.Location = new Point(196, 138);
+            Comentarios_btn.Location = new Point(280, 230);
+            Comentarios_btn.Margin = new Padding(4, 5, 4, 5);
             Comentarios_btn.Name = "Comentarios_btn";
-            Comentarios_btn.Size = new Size(150, 50);
+            Comentarios_btn.Size = new Size(214, 83);
             Comentarios_btn.TabIndex = 2;
             Comentarios_btn.Text = "Comentarios";
             Comentarios_btn.UseVisualStyleBackColor = true;
@@ -72,36 +75,41 @@
             // 
             // Materias_btn
             // 
-            Materias_btn.Location = new Point(421, 138);
+            Materias_btn.Location = new Point(601, 230);
+            Materias_btn.Margin = new Padding(4, 5, 4, 5);
             Materias_btn.Name = "Materias_btn";
-            Materias_btn.Size = new Size(150, 50);
+            Materias_btn.Size = new Size(214, 83);
             Materias_btn.TabIndex = 3;
             Materias_btn.Text = "Materias";
             Materias_btn.UseVisualStyleBackColor = true;
+            Materias_btn.Click += Materias_btn_Click;
             // 
             // Maestros_btn
             // 
-            Maestros_btn.Location = new Point(648, 138);
+            Maestros_btn.Location = new Point(926, 230);
+            Maestros_btn.Margin = new Padding(4, 5, 4, 5);
             Maestros_btn.Name = "Maestros_btn";
-            Maestros_btn.Size = new Size(150, 50);
+            Maestros_btn.Size = new Size(214, 83);
             Maestros_btn.TabIndex = 4;
             Maestros_btn.Text = "Maestros";
             Maestros_btn.UseVisualStyleBackColor = true;
             // 
             // Carreras_btn
             // 
-            Carreras_btn.Location = new Point(196, 234);
+            Carreras_btn.Location = new Point(280, 390);
+            Carreras_btn.Margin = new Padding(4, 5, 4, 5);
             Carreras_btn.Name = "Carreras_btn";
-            Carreras_btn.Size = new Size(150, 50);
+            Carreras_btn.Size = new Size(214, 83);
             Carreras_btn.TabIndex = 5;
             Carreras_btn.Text = "Carreras";
             Carreras_btn.UseVisualStyleBackColor = true;
             // 
             // Perfil_btn
             // 
-            Perfil_btn.Location = new Point(421, 234);
+            Perfil_btn.Location = new Point(601, 390);
+            Perfil_btn.Margin = new Padding(4, 5, 4, 5);
             Perfil_btn.Name = "Perfil_btn";
-            Perfil_btn.Size = new Size(150, 50);
+            Perfil_btn.Size = new Size(214, 83);
             Perfil_btn.TabIndex = 6;
             Perfil_btn.Text = "Perfil";
             Perfil_btn.UseVisualStyleBackColor = true;
@@ -109,18 +117,19 @@
             // 
             // Salir_btn
             // 
-            Salir_btn.Location = new Point(648, 234);
+            Salir_btn.Location = new Point(926, 390);
+            Salir_btn.Margin = new Padding(4, 5, 4, 5);
             Salir_btn.Name = "Salir_btn";
-            Salir_btn.Size = new Size(150, 50);
+            Salir_btn.Size = new Size(214, 83);
             Salir_btn.TabIndex = 7;
             Salir_btn.Text = "Salir";
             Salir_btn.UseVisualStyleBackColor = true;
             // 
             // Home
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 461);
+            ClientSize = new Size(1406, 768);
             Controls.Add(Salir_btn);
             Controls.Add(Perfil_btn);
             Controls.Add(Carreras_btn);
@@ -129,6 +138,7 @@
             Controls.Add(Comentarios_btn);
             Controls.Add(label1);
             Controls.Add(ucneLogo_pbx);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "Home";
             Text = "Home";
             FormClosing += Home_FormClosing;
