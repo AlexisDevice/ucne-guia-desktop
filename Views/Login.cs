@@ -32,17 +32,24 @@ namespace ucne_guia_desktop.Views
             string email = Email_tbx.Text;
             string password = Password_tbx.Text;
 
-            bool isAuth = await auth.Login(email, password);
-            if (isAuth)
+            if (email.Length == 0 || password.Length == 0)
             {
-                Home home = new Home();
-                home.Owner = this;
-                home.Show();
-                this.Hide();
+                MessageBox.Show("Por favor llene todos los campos");
             }
             else
             {
-                MessageBox.Show("Esta porqueria no funciona");
+                bool isAuth = await auth.Login(email, password);
+                if (isAuth)
+                {
+                    Home home = new Home();
+                    home.Owner = this;
+                    home.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo iniciar sesion, intentelo de nuevo");
+                }
             }
         }
     }
