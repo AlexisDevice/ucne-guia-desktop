@@ -33,10 +33,12 @@ namespace ucne_guia_desktop.Views
             string password = Password_tbx.Text;
 
             bool isAuth = await auth.Login(email, password);
-            MessageBox.Show($"{isAuth}");
             if (isAuth)
             {
-                MessageBox.Show("La informacion es correcta");
+                Home home = new Home();
+                home.Owner = this;
+                home.Show();
+                this.Hide();
             }
             else
             {
