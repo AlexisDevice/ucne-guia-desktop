@@ -93,6 +93,7 @@
             Maestros_btn.TabIndex = 4;
             Maestros_btn.Text = "Maestros";
             Maestros_btn.UseVisualStyleBackColor = true;
+            Maestros_btn.Click += Maestros_btn_Click;
             // 
             // Carreras_btn
             // 
@@ -103,6 +104,7 @@
             Carreras_btn.TabIndex = 5;
             Carreras_btn.Text = "Carreras";
             Carreras_btn.UseVisualStyleBackColor = true;
+            Carreras_btn.Click += Carreras_btn_Click;
             // 
             // Perfil_btn
             // 
