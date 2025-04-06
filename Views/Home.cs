@@ -39,5 +39,17 @@ namespace ucne_guia_desktop.Views
             Materias materias = new Materias();
             materias.Show();
         }
+
+        private void Maestros_btn_Click(object sender, EventArgs e)
+        {
+            profesor profesor = new profesor();
+            profesor.Show();
+        }
+
+        private void Carreras_btn_Click(object sender, EventArgs e)
+        {
+            Carreras carreras = new Carreras();
+            carreras.Show();
+        }
     }
 }
