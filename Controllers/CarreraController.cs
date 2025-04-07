@@ -9,7 +9,7 @@ namespace ucne_guia_desktop.Controllers
 {
     internal class CarreraController
     {
-        private readonly string UrlApi = "http://192.168.0.104:5000";
+        private readonly string UrlApi = Auth.apiUrl;
         private readonly HttpClient client = new HttpClient();
 
         public async Task<List<Carrera>> GetCarreras()
@@ -20,7 +20,7 @@ namespace ucne_guia_desktop.Controllers
                 if (response.IsSuccessStatusCode)
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    List<Carrera> carreras = JsonSerializer.Deserialize<List<Carrera>>(responseBody);
+                    List<Carrera> carreras = System.Text.Json.JsonSerializer.Deserialize<List<Carrera>>(responseBody);
                     return carreras;
                 }
                 return null;

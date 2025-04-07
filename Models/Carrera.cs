@@ -8,8 +8,13 @@ namespace ucne_guia_desktop.Models
 {
     class Carrera
     {
-        public int Id { get; set; }
+        public int id { get; set; }
         public string nombre { get; set; }
 
+        public Carrera(int id, string nombre)
+        {
+            this.id = id;
+            this.nombre = nombre;
+        }
     }
 }

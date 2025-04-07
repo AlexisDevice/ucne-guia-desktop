@@ -21,7 +21,7 @@ namespace ucne_guia_desktop.Views
         private async void Carreras_Load(object sender, EventArgs e)
         {
             CarreraController carrera = new CarreraController();
-            Carreragril.DataSource = carrera.GetCarreras;
+            Carreragril.DataSource = await carrera.GetCarreras();
         }
     }
 }

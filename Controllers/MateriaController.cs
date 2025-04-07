@@ -11,7 +11,7 @@ namespace ucne_guia_desktop.Controllers
     {
 
 
-        private readonly string UrlApi = "http://192.168.0.104:5000";
+        private readonly string UrlApi = Auth.apiUrl;
         private readonly HttpClient client = new HttpClient();
         public async Task<List<Materia>> getmateria()
         {
